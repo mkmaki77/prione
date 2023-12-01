@@ -46,7 +46,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,5531,2711);
 	this.initialize(ss["test_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
-(lib.向量圖智慧型物件 = function() {
+(lib.item2 = function() {
 	this.initialize(ss["test_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -65,7 +65,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
-(lib.元件1 = function(mode,startPosition,loop,reversed) {
+(lib.item1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -76,10 +76,10 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// 圖層_1
-	this.instance = new lib.向量圖智慧型物件();
+	this.instance = new lib.item2();
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
-}).prototype = getMCSymbolPrototype(lib.元件1, new cjs.Rectangle(0,0,1271,595), null);
+}).prototype = getMCSymbolPrototype(lib.item1, new cjs.Rectangle(0,0,1271,595), null);
 // stage content:
 (lib.test = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = false; }
@@ -92,10 +92,10 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// 圖層_2
-	this.instance = new lib.元件1();
+	this.instance = new lib.item1();
 	this.instance.setTransform(469.8,454.1,1,1,0,0,0,635.5,297.5);
 	this.instance.compositeOperation = "screen";
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:1496.85},24,cjs.Ease.cubicInOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:949.7},24,cjs.Ease.cubicInOut).wait(1));
 	// 圖層_1
 	this.instance_1 = new lib.CachedBmp_2();
 	this.instance_1.setTransform(-581.9,-144.4,0.5,0.5);
